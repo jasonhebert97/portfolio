@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JH - Etch-a-Sketch</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/stylish-portfolio.css" rel="stylesheet">
+    
+    <!-- Page Specific CSS -->
+    <style>
+        img { padding: 2rem; width: 100%; }
+        .select-section {
+            padding-top: 1rem;
+            display: grid;
+            font-size: 1.25rem;
+        }
+        .select-section a {
+            color: white;
+        }
+        .masthead {
+            background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("/misc-projects/img/mastheads/etch-masthead.png");
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("/misc-projects/img/mastheads/etch-masthead.png");
+        }  
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="/index.html#page-top">Jason Hebert</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="/index.html#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="/index.html#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="/index.html#portfolio">Portfolio</a>
+        </li>
+        <li class="sidebar-nav-item other-nav-item">
+          <a class="js-scroll-trigger" href="misc.html">Misc Projects</a>
+        </li>
+        <li class="sidebar-nav-item other-nav-item">
+          <a class="js-scroll-trigger" href="photography.html">Misc - Photography</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">Experimental Etch-a-Sketch</h1>
+        <div class="lead mb-5 select-section">
+            <a class="js-scroll-trigger" href="#introduction">Introduction</a>
+            <a class="js-scroll-trigger" href="#hardware">Hardware</a>
+            <a class="js-scroll-trigger" href="#examples">Twitter Account &amp; Example</a>
+            <a class="js-scroll-trigger" href="#how-it-works">How it Works</a>
+            <a class="js-scroll-trigger" href="#code">The Source Code</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="bg-light content-section" id="introduction">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Introduction</h2>
+            <p class="lead mb-5">This project was created for a class titled Introduction to Computation at RISD (RISD0420B) and utilizes the different visual, physical, and networking elements discussed throughout the course. The project materializes itself in the hardware of the Arduino, visualizes itself as a user creates it as interfaced through a Processing sketch, and archives itself by being posted to Twitter under the account @assignment3_jh (which has been deactivated recently for security sake). The hardware consists of an Arduino Uno, a breadboard, a joystick, an IR receiver and remote, and miscellaneous wires. The functionality of these controllers are found on the software side of things, where the movements of the joystick parallel the movements of the drawing point and the different buttons of the IR controller toggle or change different options. To aid the user in mastering the hardware, a second sketch window consisting of an interface pops up, indicating the different modes, colors, and settings the user has set (which will be shown below).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <!-- Hardware -->
+    <section class="content-section" id="hardware">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Hardware</h2>
+            <h4>Hardware Blueprint</h4>
+            <img src="img/etch-a-sketch/hardware-blueprints.png">
+            <h4>Hardware Construction</h4>
+            <img src="img/etch-a-sketch/hardware.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Twitter and Examples -->
+    <section class="bg-light content-section" id="examples">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Twitter Account &amp; Example</h2>
+            <h4>Twitter Account</h4>
+            <img src="img/etch-a-sketch/twitter.png">
+            <h4>Example Post</h4>
+            <img src="img/etch-a-sketch/example.png">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- How it Works -->
+    <section class="content-section" id="how-it-works">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>How it Works</h2>
+            <p class="lead mb-5">All active software elements and options are displayed on the second screen of the program. This controller panel is shown below.</p>
+            <img src="img/etch-a-sketch/instructions.png">
+            <p class="lead mb-5">The left-most column represents the different modes the user can operate over. To maneuver through these options, the user must press the ST button on the remote which will toggle the controller mode to mode — as is indicated by the red radio button in the bottom center module. The user would then hit any of the buttons from 0 to 5 to choose a mode. The middle module with the five differently colored boxes indicates the different colors within the selected mode that the user can use on the drawing. To choose between these colors, the user must hit the EQ button on the remote to change the remote to color mode — as would also be indicated in the lower middle module. After doing that, any of the colors can be selected with their respectively numbered button. To add noise to the drawing tool, the user simply needs to hit the ▲ button. The upper right module will indicated that noise is turned on with the red ellipse. To turn off noise, the user must hit the ▼ button. After fiddling around with the joystick and different options with the controller, the user can finish by hitting the ⏯ button and sending a saved image of the sketch to the previously mentioned Twitter account.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- The Code -->
+    <section class="bg-light content-section" id="code">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>The Source Code</h2>
+            <p class="lead mb-5">All relevant code for this project can be found in the following <a href="https://github.com/jasonhebert97/CTC_Final.git" target="_blank">Github repository</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <p class="text-muted small mb-0">Copyright &copy; Jason Hebert, 2018</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/stylish-portfolio.min.js"></script>
+
+  </body>
+
+</html>

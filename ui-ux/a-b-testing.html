@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JH - A/B Testing</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/stylish-portfolio.css" rel="stylesheet">
+    
+    <!-- Page Specific CSS -->
+    <style>
+        img { padding: 2rem; width: 100%; }
+        .select-section {
+            padding-top: 1rem;
+            display: grid;
+            font-size: 1.25rem;
+        }
+        .select-section a {
+            color: white;
+        }
+        .masthead {
+            background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("/ui-ux/img/mastheads/ab-masthead.png");
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("/ui-ux/img/mastheads/ab-masthead.png");
+        }
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="/index.html#page-top">Jason Hebert</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="/index.html#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="/index.html#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="/index.html#portfolio">Portfolio</a>
+        </li>
+        <li class="sidebar-nav-item other-nav-item">
+          <a class="js-scroll-trigger" href="ui-ux.html">UI/UX Projects</a>
+        </li>
+          <li class="sidebar-nav-item other-nav-item">
+          <a class="js-scroll-trigger" href="personas.html">UI/UX - Personas &amp; Storyboard</a>
+        </li>
+        <li class="sidebar-nav-item other-nav-item">
+          <a class="js-scroll-trigger" href="interface-redesign.html">UI/UX - Interface Redesign</a>
+        </li>
+          <li class="sidebar-nav-item other-nav-item">
+          <a class="js-scroll-trigger" href="find-a-cool-cat.html">UI/UX - Find a Cool Cat</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">A/B Testing</h1>
+        <div class="lead mb-5 select-section">
+            <a class="js-scroll-trigger" href="#introduction">Introduction</a>
+            <a class="js-scroll-trigger" href="#background">Background</a>
+            <a class="js-scroll-trigger" href="#interfaces">The Interfaces</a>
+            <a class="js-scroll-trigger" href="#methodology">Research Methodology</a>
+            <a class="js-scroll-trigger" href="#hypotheses">Hypotheses</a>
+            <a class="js-scroll-trigger" href="#data">Data</a>
+            <a class="js-scroll-trigger" href="#data-evaluation">Data Evaluation</a>
+            <a class="js-scroll-trigger" href="#findings">Research Findings</a>
+            <a class="js-scroll-trigger" href="#takeaways">Takeaways and Next Steps</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="content-section" id="introduction">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Introduction</h2>
+            <p class="lead mb-5">Testing for universal interface effectiveness is no easy feat, the right amount of data and tools makes it somewhat feasible. For this project, a fabricated taxi company located in Memphis was the foundation for the branding; two differing web interfaces were designed alongside a single mobile interface. A form of A/B testing was utilized to discern what interface elements were effective at portraying the information and which web interface layout had higher rates of usability success.</p>
+            <p class="lead mb-5">Quantitative data for two versions of a website interface was collected in-class and analyzed after. The goal of this project is to experimentally determine what elements of an interface are effective and how to take that information to offer potential solutions for the flaws. This project was completed as an assignment for the class User Interface / User Experience (CSCI1300) at Brown University to showcase familiarity with this specific form of user experience testing, ability to analyze data collected from said tests, and analytical evaluation on what may help the interface perform better.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <!-- Background -->
+    <section class="bg-light content-section" id="background">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Background</h2>
+            <p class="lead mb-5">Memphis Taxis, though a mock site for gaining experience with A/B user testing, is trying to design an interface that will fare well in the modern taxi market. A basic layout has been given for the testers, so only minor layout and color changes were made for testing purposes. Basically, two versions of the same webpage were to be designed and tested on. Content was not important here — only the design elements themselves were critically examined. Calculating the usability of each interface version relied on four specific metrics: click rate, time to click, return rate, and dwell time. Test users were fellow students enrolled in the class though data evaluation was calculated individually.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <!-- Interfaces -->
+    <section class="content-section" id="interfaces">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>The Interfaces</h2>
+            <p class="lead mb-5">The two interfaces do not differ much except for different layouts and button colors. Version A utilizes a 2-by-2 grid to present the four taxi services as well as standard blue buttons. These design decisions were chosen to see how the hierarchy of a page affects its usability as well as how colors of interactive elements are registered by users. Version B differs from version A by using a vertical, hierarchical layout as well as a change in button colors. This is to determine if hierarchy layout and color truly affects the different metrics. A mistake made here is not retaining some sort of control: two different design choices are being tested which may have skewed the data.</p>
+            <h4>Version A</h4>
+            <img src="img/ab-testing/interfaces/website-a.png">
+            <h4>Version B</h4>
+            <img src="img/ab-testing/interfaces/website-b.png">
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- Research Methodology -->
+    <section class="bg-light content-section" id="methodology">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Research Methodology</h2>
+              <p class="lead mb-5">The methodology for research matches more traditional tests: both null and alternative hypotheses were conceived for each metric, the interface was uploaded to a platform where data could be collected, tests were operated, and statistical tests were run on the data for each metric. The four metrics measured were click rate, time to click, return rate, and dwell time. Click rate measures the proportion of sessions that had at least one click, time to click evaluates how long it takes for a user to click on the webpage, return rate assesses the proportion of sessions that left the landing page and returned at some time, and dwell time gauges the average amount of time users spend on linked pages before returning to the landing page. The webpages were uploaded to a heroku site with a general index page that randomly directed a user to one of the two versions. Scripts in the background collected and wrote the data to a text file which was then parsed and uploaded to Excel. The different types of tests utilized for analyzing the data were Chi-Square tests and Two-Sample T-Tests — the reasons for these statistical methods are explained with each metric below. For the class, each statistic was calculated by hand; however, to spare the details and to ensure correctness, <a href="https://www.evanmiller.org/ab-testing/" target="_blank">Evan Miller’s A/B Testing software</a> was used. Every test was run considering a 95% confidence interval.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- Hypotheses -->
+    <section class="content-section" id="hypotheses">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Hypotheses</h2>
+            <img src="img/ab-testing/hypotheses.png">
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- Data -->
+    <section class="bg-light content-section" id="data">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Data</h2>
+            <p class="lead mb-5">Collected data was written to a text file and parsed into a comma-separated values file. Microsoft Excel was the used to remove any unnecessary data fields and to calculate important values. Important data includes the timestamp of each point of data, which version the user encountered, page load time, click time, the ID of the clicked item, and the ID of each user. An example of the data is shown below.</p>
+            <img src="img/ab-testing/example-data.png">
+          </div>
+        </div>
+      </div>
+    </section>
+      
+      <!-- Data Evaluation -->
+    <section class="content-section" id="data-evaluation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Data Evaluation</h2>
+              <br>
+            <h4>Click Rate</h4>
+            <p class="lead mb-5">Click rate measures the proportion of sessions that had at least one click. This was calculated by dividing the number of unique first clicks of any given user by the number of unique user sessions.</p>
+            <img src="img/ab-testing/evaluations/click-rate.png">
+            <h4>Time to Click</h4>
+            <p class="lead mb-5">Time to click measures the amount of time it took users to click on the website at least one time. This was calculated by subtracting the page load time from the click time.</p>
+            <img src="img/ab-testing/evaluations/time-to-click.png">
+            <h4>Return Rate</h4>
+            <p class="lead mb-5">Return rate measures the proportion of sessions that left the landing page and returned at some point. This was calculated by dividing the number of returns by the number of unique clicks. Only the first time a user returned was used. A session return was deciphered by seeing which session IDs clicked away and if there was a second page load time for the same session ID.</p>
+            <img src="img/ab-testing/evaluations/return-rate.png">
+              <h4>Dwell Time</h4>
+            <p class="lead mb-5">Dwell times measures the average amount of time users spend on linked pages before returning to the landing page. This metric was calculated by subtracting the click time for a session ID from the second page loading time for any returning session ID.</p>
+            <img src="img/ab-testing/evaluations/dwell-time.png">
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <!-- Research Findings -->
+    <section class="bg-light content-section" id="findings">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Research Findings</h2>
+            <p class="lead mb-5">Each metric calculated showed that there were no statistical difference between both interface. This implies that the interfaces did not differ enough, there was not enough data collected to truly calculate the metrics as data was only collected during class, and that there needs to be a second trial of tests after drastic changes to the interfaces have been made.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <!-- Takeaways -->
+    <section class="content-section" id="takeaways">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Takeaways and Next Steps</h2>
+            <p class="lead mb-5">Per the research findings, takeaways include a lack of significant findings results in little insight. It is either the case that the data was limited due to the demographic it was collected from or that the interfaces did not differ enough to truly alter usability. The next steps include changing the interfaces enough so that there will be obvious differences in usability, running further tests on these new interfaces for longer and with more diverse uses, and perhaps to consider additional metrics for testing. Though neglected this time around, it is important to test only one variable instead of two: testing either layout or color concurrently may not be best practice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <p class="text-muted small mb-0">Copyright &copy; Jason Hebert, 2018</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/stylish-portfolio.min.js"></script>
+
+  </body>
+
+</html>
